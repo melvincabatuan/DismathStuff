@@ -1,0 +1,16 @@
+# Time complexity: O(n)
+
+ALGORITHM linear_search(arr, key, length):
+    '''
+    INPUT :
+            arr - a sequence of sorted integers;
+            key - integer to search for;
+            length - sequence size
+    OUTPUT:
+            index of the key IF found
+            -1 IF not found
+    '''
+1      FOR i IN range(length):
+2          IF arr[i] EQUALS key:
+3              RETURN i
+4      RETURN -1

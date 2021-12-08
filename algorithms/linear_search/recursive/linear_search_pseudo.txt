@@ -1,0 +1,17 @@
+ALGORITHM linear_search(arr, key, begin, end):
+    '''
+    INPUT :
+            arr - a sequence of sorted integers;
+            key - integer to search for;
+            begin - start index of the sequence;
+            end - ending index of the sequence
+    OUTPUT:
+            index of the key IF found
+            -1 IF not found
+    '''
+1      IF begin <= end:
+2          IF arr[begin] EQUALS key:
+3              RETURN begin
+4          ELSE:
+5              RETURN linear_search(arr, key, begin + 1, end)
+6      RETURN -1

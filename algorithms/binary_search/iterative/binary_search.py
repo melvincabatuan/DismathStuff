@@ -24,13 +24,18 @@ def binary_search(arr, key, begin, end):
     return -1  # key not found
 
 
-# Sample run
-numbers = [1, 3, 7, 8, 9, 10, 17, 23, 25, 30, 31]
-n = len(numbers)
+def main():
+    # Sample run
+    numbers = [1, 3, 7, 8, 9, 10, 17, 23, 25, 30, 31]
+    n = len(numbers)
 
-# Existent value
-print(binary_search(numbers, 1, 0, n - 1))  # 0
-print(binary_search(numbers, 31, 0, n - 1))  # 10
+    # Existent value
+    print(binary_search(numbers, 1, 0, n - 1))  # 0
+    print(binary_search(numbers, 31, 0, n - 1))  # 10
 
-# Nonexistent value
-print(binary_search(numbers, 100, 0, n - 1))  # -1
+    # Nonexistent value
+    print(binary_search(numbers, 100, 0, n - 1))  # -1
+
+
+if __name__ == '__main__':
+    main()
