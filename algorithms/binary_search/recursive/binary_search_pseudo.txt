@@ -9,7 +9,7 @@ ALGORITHM binary_search(arr, key, begin, end):
             index of the element or key IF found
             -1 IF not found
     '''
-1      IF end > begin:
+1      IF end >= begin:
 2          SET middle TO (begin + end) // 2
 3          IF arr[middle] EQUALS key:
 4              RETURN middle

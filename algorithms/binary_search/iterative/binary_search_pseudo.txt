@@ -1,0 +1,22 @@
+ALGORITHM binary_search(arr, key, begin, end):
+    '''
+    INPUT :
+            arr - a sequence of sorted integers;
+            key - integer to search for;
+            begin - start index of the sequence;
+            end - ending index of the sequence
+    OUTPUT:
+            index of the key IF found
+            -1 IF not found
+    '''
+1      WHILE begin < end:
+2          SET mid TO (begin + end) // 2
+3          IF arr[mid] < key:
+4              SET begin TO mid + 1  # upper half
+5          ELSE:
+6              SET end TO mid        # lower half
+7  
+8      IF arr[begin] EQUALS key:
+9          RETURN begin
+10  
+11     RETURN -1  # key not found
